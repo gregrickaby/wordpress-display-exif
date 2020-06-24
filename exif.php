@@ -1,6 +1,6 @@
 <?php
 /**
- * Display Exif data via Shortcode. 
+ * Display EXIF data via Shortcode. 
  * Usage: [exif id="ID of image" lens="Panasonic G Vario 45-150mm" location="Anytown, US"]
  *
  * @author Greg Rickaby <greg@webdevstudios.com>
@@ -46,7 +46,7 @@ function grd_display_exif( $atts ) {
 	ob_start();
 	?>
 
-	<p class="exif-title"><?php esc_html_e( 'Exif Data:', 'grd' ); ?></p>
+	<p class="exif-title"><?php esc_html_e( 'EXIF Data:', 'grd' ); ?></p>
 	<ul class="exif-list">
 		<?php echo ( $timestamp ) ? '<li class="exif-item"><strong>' . esc_html__( 'Date Taken', 'grd' ) . '</strong>: ' . esc_html( date( 'F d, Y', $timestamp ) ) . '</li>' : ''; ?>
 		<?php echo ( $camera ) ? '<li class="exif-item"><strong>' . esc_html__( 'Location', 'grd' ) . '</strong>: ' . wp_kses_post( $atts['location'] ) . '</li>' : ''; ?>
