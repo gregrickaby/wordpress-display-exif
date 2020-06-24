@@ -1,6 +1,6 @@
-# WordPress Display Exif
+# WordPress Display EXIF
 
-Display image Exif data via shortcode.
+Display image EXIF data via shortcode.
 
 ![screenshot](https://dl.dropbox.com/s/rxc2lzpcqwkyiqh/Screenshot%202020-06-23%2020.41.48.png?dl=0)
 
@@ -14,7 +14,7 @@ Display image Exif data via shortcode.
 
 ## Usage
 
-Add the [shortcode function](https://github.com/gregrickaby/wordpress-display-exif/blob/master/exif.php) to `functions.php`, and then use `[exif id="12345"]` on any post or page to display exif data.
+Add the [shortcode function](https://github.com/gregrickaby/wordpress-display-exif/blob/master/exif.php) to `functions.php`, and then use `[exif id="12345"]` on any post or page to display EXIF data.
 
 ```php
 [exif id="12345" location="Anytown, USA" lens="Panasonic G Vario 45-150mm"]
