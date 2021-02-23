@@ -34,6 +34,7 @@ function grd_display_exif( $atts ) {
 	}
 
 	// Destructure image meta array and set variables.
+	// @see https://stitcher.io/blog/array-destructuring-with-list-in-php
 	[
 		'aperture'          => $aperture,
 		'camera'            => $camera,
